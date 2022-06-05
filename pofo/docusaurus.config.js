@@ -32,20 +32,6 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -60,14 +46,20 @@ const config = {
         title: 'Noka Worlds',
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
+            to: '/school/', 
+            label: 'School', 
+            position: 'left'
           },
-          {to: '/blog', 
-          label: 'Blog', 
-          position: 'left'},
+          {
+            to: '/life/', 
+            label: 'Life', 
+            position: 'left'
+          },
+          {
+            to: '/travel/', 
+            label: 'Travel', 
+            position: 'left'
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -78,15 +70,7 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
+          
           {
             title: 'Community',
             items: [
@@ -105,7 +89,7 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'All my Github link',
             items: [
               {
                 label: 'Blog',
@@ -118,12 +102,46 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Noka Worlds, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      plugins: [
+        [
+          '@docusaurus/plugin-content-blog',
+          {
+            id: '1',
+            path: './school',
+            routeBasePath: 'school',
+          },
+        ],
+        [
+          '@docusaurus/plugin-content-blog',
+          {
+            id: '2',
+            path: './life',
+            routeBasePath: 'life',
+          },
+        ],
+        [
+          '@docusaurus/plugin-content-blog',
+          {
+            id: '3',
+            path: './travel',
+            routeBasePath: 'travel',
+          },
+        ],
+        [
+          '@docusaurus/plugin-content-blog',
+          {
+            id: '4',
+            path: './travel',
+            routeBasePath: 'travel',
+          },
+        ]
+      ]
     }),
 };
 
