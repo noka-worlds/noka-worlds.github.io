@@ -108,7 +108,8 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      plugins: [
+    }),
+    plugins: [
         [
           '@docusaurus/plugin-content-blog',
           {
@@ -142,7 +143,6 @@ const config = {
           },
         ]
       ]
-    }),
 };
 
 module.exports = config;
