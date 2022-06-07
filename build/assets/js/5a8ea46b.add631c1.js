@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpofo=self.webpackChunkpofo||[]).push([[5288],{2150:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Palma Trip","permalink":"/travel/welcome"}]}')}}]);

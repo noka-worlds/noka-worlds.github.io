@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpofo=self.webpackChunkpofo||[]).push([[1117],{6178:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"index","permalink":"/school/index"}]}')}}]);
