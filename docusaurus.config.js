@@ -42,42 +42,6 @@ const config = {
     ],
   ],
 
-  plugins: [
-    [
-      '@docusaurus/plugin-content-blog',
-      {
-        id: 'travel-blog',
-        routeBasePath: 'travel',
-        path: './Blogs/travel',
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-blog',
-      {
-        id: 'foodie-blog',
-        routeBasePath: 'foodie',
-        path: './Blogs/foodie',
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'learning-blog',
-        routeBasePath: 'learning',
-        path: './Blogs/learning',
-        sidebarPath: require.resolve('./sidebarLearning.js'),
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-blog',
-      {
-        id: 'coding-blog',
-        routeBasePath: 'coding',
-        path: './Blogs/coding',
-      },
-    ],
-  ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -162,6 +126,43 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'travel-blog',
+        routeBasePath: 'travel',
+        path: './Blogs/travel',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'foodie-blog',
+        routeBasePath: 'foodie',
+        path: './Blogs/foodie',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'learning-blog',
+        routeBasePath: 'learning',
+        path: './Blogs/learning',
+        sidebarPath: require.resolve('./sidebarLearning.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'coding-blog',
+        routeBasePath: 'coding',
+        path: './Blogs/coding',
+      },
+    ],
+  ],
+
 };
 
 module.exports = config;
