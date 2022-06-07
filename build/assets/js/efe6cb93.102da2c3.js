@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpofo=self.webpackChunkpofo||[]).push([[9097],{3713:function(a){a.exports=JSON.parse('{"label":"Spain","permalink":"/travel/tags/spain","allTagsPath":"/travel/tags","count":1}')}}]);
