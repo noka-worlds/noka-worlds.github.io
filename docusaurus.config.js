@@ -61,7 +61,7 @@ const config = {
             position: 'left'
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/potatochick200',
             label: 'GitHub',
             position: 'right',
           },
@@ -130,14 +130,6 @@ const config = {
           '@docusaurus/plugin-content-blog',
           {
             id: '3',
-            path: './travel',
-            routeBasePath: 'travel',
-          },
-        ],
-        [
-          '@docusaurus/plugin-content-blog',
-          {
-            id: '4',
             path: './travel',
             routeBasePath: 'travel',
           },
