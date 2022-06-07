@@ -3,11 +3,11 @@ module.exports = {
     // Normal syntax:
     {
       type: 'doc',
-      id: 'intro', // document ID
-      label: 'intro', // sidebar label
+      id: 'index', // document ID
+      label: 'index', // sidebar label
     },
 
     // Shorthand syntax:
-    'intro', // document ID
+    'index', // document ID
   ],
 };
