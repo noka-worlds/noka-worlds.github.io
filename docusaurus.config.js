@@ -32,20 +32,6 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -53,23 +39,67 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'travel-blog',
+        routeBasePath: 'travel',
+        path: './Blogs/travel',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'foodie-blog',
+        routeBasePath: 'foodie',
+        path: './Blogs/foodie',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'learning-blog',
+        routeBasePath: 'learning',
+        path: './Blogs/learning',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'coding-blog',
+        routeBasePath: 'coding',
+        path: './Blogs/coding',
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
+        title: 'Noka worlds',
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
+            to: 'travel', 
+            label: 'Travel', 
+            position: 'left'
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: 'foodie', 
+            label: 'Foodie', 
+            position: 'left'
+          },
+          {
+            to: 'learning', 
+            label: 'Learning', 
+            position: 'left'
+          },
+          {
+            to: 'coding', 
+            label: 'Coding', 
+            position: 'left'
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -85,7 +115,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/Blogs/learning/intro',
               },
             ],
           },
