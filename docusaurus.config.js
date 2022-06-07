@@ -30,8 +30,11 @@ const config = {
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
+       /**@type {import('@docusaurus/preset-classic').Options} */
       ({
+        docs:{
+          sidebarPath: require.resolve('./sidebars.js'),
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -62,6 +65,7 @@ const config = {
         id: 'learning-blog',
         routeBasePath: 'learning',
         path: './Blogs/learning',
+        sidebarPath: require.resolve('./sidebarLearning.js'),
       },
     ],
     [
@@ -93,7 +97,8 @@ const config = {
           {
             to: 'learning', 
             label: 'Learning', 
-            position: 'left'
+            position: 'left',
+            activeBasePath: "learning",
           },
           {
             to: 'coding', 
