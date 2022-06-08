@@ -80,15 +80,6 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/Blogs/learning/intro',
-              },
-            ],
-          },
-          {
             title: 'Community',
             items: [
               {

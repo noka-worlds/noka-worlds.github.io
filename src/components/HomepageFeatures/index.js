@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'An IT management student shifting his career',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Hi! My name is Noka! A second-year IT management for business student who want to go from IT management to software engineering.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Interested in LIFE',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Noka is a christian from ICOC, he share 
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Passionate Learner',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Coming from a background in technology and business. I'm learning a lot step by step. Throughout this enjoyable and educational adventure, I will provide a wealth of information.
       </>
     ),
   },
