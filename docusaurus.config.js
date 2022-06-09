@@ -12,9 +12,9 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
   projectName: 'noka-worlds.github.io',
   deploymentBranch:'main',
+  favicon: '/img/logo.png',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Noka-worlds', // Usually your GitHub org/user name.
