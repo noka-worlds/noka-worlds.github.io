@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[1931],{9424:function(e){e.exports=JSON.parse('{"label":"MIT","permalink":"/learning/tags/mit","allTagsPath":"/learning/tags","count":1,"items":[{"id":"MIT-6.087/index","title":"Overview","description":"COURSE DESCRIPTION","permalink":"/learning/MIT-6.087/"}]}')}}]);
