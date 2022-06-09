@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[2767],{154:function(a){a.exports=JSON.parse('{"label":"Palma de Mallorca","permalink":"/travel/tags/palma-de-mallorca","allTagsPath":"/travel/tags","count":1}')}}]);

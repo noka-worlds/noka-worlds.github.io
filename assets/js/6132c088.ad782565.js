@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[7700],{6031:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Palma de Mallorca (English)","permalink":"/travel/Palma de Mallorca (English)"},{"title":"Palma de Mallorca (\u9999\u6e2f\u8a9ehongkongese)","permalink":"/travel/Palma de Mallorca"}]}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[7700],{6031:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Palma de Mallorca","permalink":"/travel/Palma de Mallorca"}]}')}}]);

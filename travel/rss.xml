@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Noka worlds Blog</title>
         <link>https://noka-worlds.github.io/travel</link>
         <description>Noka worlds Blog</description>
-        <lastBuildDate>Mon, 25 Apr 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 26 Apr 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Palma de Mallorca]]></title>
+            <title><![CDATA[Palma de Mallorca (English)]]></title>
+            <link>https://noka-worlds.github.io/travel/Palma de Mallorca (English)</link>
+            <guid>Palma de Mallorca (English)</guid>
+            <pubDate>Tue, 26 Apr 2022 00:00:00 GMT</pubDate>
+            <category>travel</category>
+            <category>Palma de Mallorca</category>
+            <category>backpacking</category>
+            <category>in-budget</category>
+        </item>
+        <item>
+            <title><![CDATA[Palma de Mallorca (香港語hongkongese)]]></title>
             <link>https://noka-worlds.github.io/travel/Palma de Mallorca</link>
             <guid>Palma de Mallorca</guid>
-            <pubDate>Mon, 25 Apr 2022 00:00:00 GMT</pubDate>
+            <pubDate>Tue, 26 Apr 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[我都係隔左三個月先寫翻，第一次寫唔好見怪]]></description>
+            <content:encoded><![CDATA[<p>我都係隔左三個月先寫翻，第一次寫唔好見怪</p><h1></h1><h1>窮遊</h1><p>3日兩夜行程
+兩日都係住呢間青年旅館，因爲去嘅時候係復活節左右，價錢會比較貴，每日16歐元，兩日total 大概20歐。</p><h1>DAY 1</h1><h1>DAY 2</h1><h1>DAY 3</h1><p>攝影器材：IPHONE SE 2</p>]]></content:encoded>
             <category>travel</category>
             <category>Palma de Mallorca</category>
             <category>backpacking</category>
