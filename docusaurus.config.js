@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Noka worlds',
-  tagline: 'Nok Nok Noka door',
+  tagline: 'The best time to plant a tree was 20 years ago. The second best time is now.',
   url: 'https://noka-worlds.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -48,7 +48,7 @@ const config = {
       navbar: {
         title: 'Noka worlds',
         items: [
-          {
+          /*{
             to: 'travel', 
             label: 'Travel', 
             position: 'left'
@@ -57,7 +57,7 @@ const config = {
             to: 'foodie', 
             label: 'Foodie', 
             position: 'left'
-          },
+          },*/
           {
             to: 'learning', 
             label: 'Learning', 
@@ -70,7 +70,7 @@ const config = {
             position: 'left'
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/potatochick2020',
             label: 'GitHub',
             position: 'right',
           },
@@ -80,32 +80,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Community',
+            title: 'Contact Me: ',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Github',
+                href: 'https://github.com/potatochick2020',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Email (with public key)',
+                href: 'coding/email-me',
               },
             ],
           },

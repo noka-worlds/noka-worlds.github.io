@@ -3,23 +3,11 @@ module.exports = {
     'index',
     {
       type: 'category',
-      label: 'MIT-6.087',
+      label: 'MIT-6.087 C programming',
       items: [
         'MIT-6.087/index',
-        {
-          type: 'category',
-          label: 'Problem Set 1',
-          items: [
-            'MIT-6.087/PB1/index',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Problem Set 2',
-          items: [
-            'MIT-6.087/PB2/index',
-          ]
-        },
+        'MIT-6.087/PB1/index',
+        'MIT-6.087/PB2/index',
         {
           type: 'category',
           label: 'Problem Set 3',
@@ -70,6 +58,20 @@ module.exports = {
           ]
         }
       ],
+    },
+    {
+      type: 'category',
+      label: 'MIT-6.005 Software Construction',
+      items: [
+        'MIT-6.005/index',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'MIT-6.170 Software Studio',
+      items: [
+        'MIT-6.170/index',
+      ]
     },
   ],
 };

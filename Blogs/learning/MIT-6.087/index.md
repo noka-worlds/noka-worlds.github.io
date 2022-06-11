@@ -4,7 +4,7 @@ tags: [MIT,6.087,C,UNIX]
 ---
 
 ### COURSE DESCRIPTION
-This course provides a thorough introduction to the C programming language, the workhorse of the UNIX operating system and lingua franca of embedded processors and micro-controllers. The first two weeks will cover basic syntax and grammar, and
+This course provides a thorough introduction to the C programming language, the workhorse of the UNIX operating system and lingua franca of embedded processors and micro-controllers. The first two weeks will cover basic syntax and grammar, and expose students to practical programming techniques. The remaining lectures will focus on more advanced concepts, such as dynamic memory allocation, concurrency and synchronization, UNIX signals and process control, library development and usage. Daily programming assignments and weekly laboratory exercises are required. Knowledge of C is highly marketable for summer internships, UROPs, and full-time positions in software and embedded systems development.
 
 ### Time Line
 
@@ -33,6 +33,16 @@ I skipped the Final project of building C application to leveraging one or more 
 
 ### Setting up the environment
 I had follow this video to set up the environment in my window machine: https://www.youtube.com/watch?time_continue=427&v=jvg4VtYEhKU&feature=emb_logo
+
+after install minGW, u should be able to compile and run c/c++ program with g++.
+
+To install Gdb, run the following command:
+
+`mingw-get.exe install gdb`
+
+To check the environment set up, the problem set 1, question 1.3 have a test about it.
+
+
 ### Material and Links
 
 The course website: https://ocw.mit.edu/courses/6-087-practical-programming-in-c-january-iap-2010/
