@@ -4,10 +4,23 @@
         <title>Noka worlds Blog</title>
         <link>https://noka-worlds.github.io/coding</link>
         <description>Noka worlds Blog</description>
-        <lastBuildDate>Tue, 07 Jun 2022 10:27:39 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 11 Jun 2022 21:19:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Email me]]></title>
+            <link>https://noka-worlds.github.io/coding/email-me</link>
+            <guid>/email-me</guid>
+            <pubDate>Sat, 11 Jun 2022 21:19:57 GMT</pubDate>
+            <description><![CDATA[My email address: nokaworlds@gmail.com]]></description>
+            <content:encoded><![CDATA[<p>My email address: <a href="mailto:nokaworlds@gmail.com" target="_blank" rel="noopener noreferrer"></a><a href="mailto:nokaworlds@gmail.com" target="_blank" rel="noopener noreferrer">nokaworlds@gmail.com</a></p><p>-----BEGIN PUBLIC KEY----- </p><blockquote><p>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCCGM1TLTws1rEuKAs+Bf5D8GET
+on4k2UCwYDimfiGeSlf4Zd0StokjjZeC+78DP2aIpjSxkIsIHLev62gX4kozLxC1
+j7GytRadVL5nUSrOZj6Y0H4cTO2RlSkksSDOv3L3ytc4L3G1tCv5eRHCcOLB1T3Y
+Vv14I6n84G/Tm+44PQIDAQAB</p></blockquote><p>-----END PUBLIC KEY-----</p>]]></content:encoded>
+            <category>crypto</category>
+            <category>encryption</category>
+        </item>
         <item>
             <title><![CDATA[Overview]]></title>
             <link>https://noka-worlds.github.io/coding/index</link>

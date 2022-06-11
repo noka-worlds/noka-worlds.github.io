@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://noka-worlds.github.io/coding</id>
     <title>Noka worlds Blog</title>
-    <updated>2022-06-07T10:27:39.000Z</updated>
+    <updated>2022-06-11T21:19:57.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://noka-worlds.github.io/coding"/>
     <subtitle>Noka worlds Blog</subtitle>
     <icon>https://noka-worlds.github.io/img/logo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Email me]]></title>
+        <id>/email-me</id>
+        <link href="https://noka-worlds.github.io/coding/email-me"/>
+        <updated>2022-06-11T21:19:57.000Z</updated>
+        <summary type="html"><![CDATA[My email address: nokaworlds@gmail.com]]></summary>
+        <content type="html"><![CDATA[<p>My email address: <a href="mailto:nokaworlds@gmail.com" target="_blank" rel="noopener noreferrer"></a><a href="mailto:nokaworlds@gmail.com" target="_blank" rel="noopener noreferrer">nokaworlds@gmail.com</a></p><p>-----BEGIN PUBLIC KEY----- </p><blockquote><p>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCCGM1TLTws1rEuKAs+Bf5D8GET
+on4k2UCwYDimfiGeSlf4Zd0StokjjZeC+78DP2aIpjSxkIsIHLev62gX4kozLxC1
+j7GytRadVL5nUSrOZj6Y0H4cTO2RlSkksSDOv3L3ytc4L3G1tCv5eRHCcOLB1T3Y
+Vv14I6n84G/Tm+44PQIDAQAB</p></blockquote><p>-----END PUBLIC KEY-----</p>]]></content>
+        <category label="crypto" term="crypto"/>
+        <category label="encryption" term="encryption"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Overview]]></title>
         <id>/index</id>
