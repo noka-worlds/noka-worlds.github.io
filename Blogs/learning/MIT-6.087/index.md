@@ -31,7 +31,7 @@ Problem set 1
 
 I skipped the Final project of building C application to leveraging one or more open-source libraries as Open-source project just are not my cup of tea. If you are interested in it, you could have a look on <a href = "https://ocw.mit.edu/courses/6-087-practical-programming-in-c-january-iap-2010/9796fe2dda5404aa9d14a49081b842d8_MIT6_087IAP10_project.pdf">this link</a>.
 
-### Setting up the environment
+### Setting up the environment (Window) 
 I had follow this video to set up the environment in my window machine: https://www.youtube.com/watch?time_continue=427&v=jvg4VtYEhKU&feature=emb_logo
 
 after install minGW, u should be able to compile and run c/c++ program with g++.
@@ -41,6 +41,13 @@ To install Gdb, run the following command:
 `mingw-get.exe install gdb`
 
 To check the environment set up, the problem set 1, question 1.3 have a test about it.
+
+### Setting up the environment (MAC) 
+
+I use the Clang complier provided by xcode.gd
+
+Here is how I install gdb
+https://ports.macports.org/port/gdb/
 
 
 ### Material and Links
