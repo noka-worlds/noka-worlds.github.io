@@ -6,6 +6,10 @@ tags: [MIT,6.087,C,UNIX]
 ### COURSE DESCRIPTION
 This course provides a thorough introduction to the C programming language, the workhorse of the UNIX operating system and lingua franca of embedded processors and micro-controllers. The first two weeks will cover basic syntax and grammar, and expose students to practical programming techniques. The remaining lectures will focus on more advanced concepts, such as dynamic memory allocation, concurrency and synchronization, UNIX signals and process control, library development and usage. Daily programming assignments and weekly laboratory exercises are required. Knowledge of C is highly marketable for summer internships, UROPs, and full-time positions in software and embedded systems development.
 
+### Thoughts/ philosophy
+
+My idea is to finish this course as fast as possible and not going for too-deep as this is just a course for me to learn a tool to be used in the coming course (CMU - 15213)
+
 ### Time Line
 
 Problem set 1
