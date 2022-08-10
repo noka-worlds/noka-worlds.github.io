@@ -1,6 +1,6 @@
 ---
 title: Overview
-tags: [Competitive programming]
+tags: [Overview]
 ---
 
 ### Overview

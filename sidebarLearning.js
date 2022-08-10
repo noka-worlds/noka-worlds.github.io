@@ -1,6 +1,8 @@
 module.exports = {
   mySidebar: [
     'index',
+    'roadmap',
+    /*
     {
       type: 'category',
       label: 'MIT-6.087 C programming',
@@ -8,13 +10,7 @@ module.exports = {
         'MIT-6.087/index',
         'MIT-6.087/PB1/index',
         'MIT-6.087/PB2/index',
-        {
-          type: 'category',
-          label: 'Problem Set 3',
-          items: [
-            'MIT-6.087/PB3/index',
-          ]
-        },
+        'MIT-6.087/PB3/index',
         {
           type: 'category',
           label: 'Problem Set 4',
@@ -73,5 +69,6 @@ module.exports = {
         'MIT-6.170/index',
       ]
     },
+    */
   ],
 };
