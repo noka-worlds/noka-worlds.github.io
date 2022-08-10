@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[2840],{8717:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Goldman Sachs virtual engineering program experience","permalink":"/coding/Goldman-sachs"},{"title":"email-me","permalink":"/coding/email-me"},{"title":"Overview","permalink":"/coding/index"}]}')}}]);

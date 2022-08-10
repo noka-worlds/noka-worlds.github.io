@@ -4,22 +4,24 @@
         <title>Noka worlds Blog</title>
         <link>https://noka-worlds.github.io/coding</link>
         <description>Noka worlds Blog</description>
-        <lastBuildDate>Sat, 11 Jun 2022 21:19:57 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 10 Aug 2022 22:34:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Email me]]></title>
+            <title><![CDATA[Goldman Sachs virtual engineering program experience]]></title>
+            <link>https://noka-worlds.github.io/coding/Goldman-sachs</link>
+            <guid>/Goldman-sachs</guid>
+            <pubDate>Wed, 10 Aug 2022 22:34:22 GMT</pubDate>
+            <description><![CDATA[Introduction]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a class="hash-link" href="#introduction" title="Direct link to heading">​</a></h2><p>A short virtual internship program related to cryptography offered by Goldman Sachs which could complete in a hour on <a href="https://www.theforage.com/" target="_blank" rel="noopener noreferrer">Forage</a> platform.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="material-provided">Material provided<a class="hash-link" href="#material-provided" title="Direct link to heading">​</a></h2><ul><li><a href="https://arstechnica.com/information-technology/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/" target="_blank" rel="noopener noreferrer">Password cracking explained (techniques described in 2013 still haven’t changed)</a></li><li><a href="https://en.wikipedia.org/wiki/Salt_(cryptography)" target="_blank" rel="noopener noreferrer">Password salting</a></li><li><a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function" target="_blank" rel="noopener noreferrer">Hash functions</a></li><li><a href="https://en.wikipedia.org/wiki/Password_cracking#Software" target="_blank" rel="noopener noreferrer">Password cracking tools</a></li><li><a href="https://howsecureismypassword.net/" target="_blank" rel="noopener noreferrer">Password strength checker</a></li><li>and a leaked password file.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="work-to-do--submission-file">Work to do / submission file<a class="hash-link" href="#work-to-do--submission-file" title="Direct link to heading">​</a></h2><p>I need to construct a report with answer to the fellow question and include the original password found in the hash.</p><ul><li>What type of hashing algorithm was used to protect passwords?</li><li>What level of protection does the mechanism offer for passwords?</li><li>What controls could be implemented to make cracking much harder for the hacker in the event of a password database leaking again?</li><li>What can you tell about the organization’s password policy (e.g. password length, key space, etc.)?</li><li>What would you change in the password policy to make breaking the passwords harder?</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="expectation-on-learning-outcome">Expectation on Learning outcome<a class="hash-link" href="#expectation-on-learning-outcome" title="Direct link to heading">​</a></h2><p>Learn something related to cryptography, encryption ,decryption, read some paper and explore a bit on it.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="actual-learning-outcome">Actual Learning Outcome<a class="hash-link" href="#actual-learning-outcome" title="Direct link to heading">​</a></h2><p>I had read the material provided, <a href="https://en.wikipedia.org/wiki/Salt_(cryptography)" target="_blank" rel="noopener noreferrer">Salt (cryptography) - Wikipedia</a> , but find out this is not useful at all during the program.</p><p>To sum up what is a Salt in cryptography, basically is to add random string after your original password before process your password through hashing function. This is to prevent the use of rainbow table for getting common password. </p><p><a href="https://en.wikipedia.org/wiki/Rainbow_table" target="_blank" rel="noopener noreferrer">Rainbow table - Wikipedia</a></p><p>Learn a bit on MD5 algorithm, read a bit on SHA. </p><p><a href="https://en.wikipedia.org/wiki/MD5" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/MD5</a></p><p>Here is the paper about two Chinese professor, Tao Xie, Dengguo Feng, cracking MD5 hashing method in 2009.</p><p><a href="https://eprint.iacr.org/2009/223.pdf" target="_blank" rel="noopener noreferrer">https://eprint.iacr.org/2009/223.pdf</a></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="recommendations-for-beginners">Recommendations for beginners<a class="hash-link" href="#recommendations-for-beginners" title="Direct link to heading">​</a></h2><p>Something good to play with if you are free at night for 1 hour and got nothing to do</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="approach">Approach:<a class="hash-link" href="#approach" title="Direct link to heading">​</a></h2><p>I read all the material provided first, and search related page of hashing method mentioned in the material. MD5, SHA1,SHA2 . I believe the password are encrypted in such ways, so I find an online tool to crack it. </p><p><a href="https://www.dcode.fr/md5-hash" target="_blank" rel="noopener noreferrer">MD5 Decrypter - Password Hash Cipher (+Salt) - Online Decoder (dcode.fr)</a></p><p>Funny enough, this are all password in the common password bank like qwerty,123456, so I could find the password out easily.</p>]]></content:encoded>
+            <category>virtual internship</category>
+        </item>
+        <item>
+            <title><![CDATA[email-me]]></title>
             <link>https://noka-worlds.github.io/coding/email-me</link>
             <guid>/email-me</guid>
             <pubDate>Sat, 11 Jun 2022 21:19:57 GMT</pubDate>
-            <description><![CDATA[My email address: nokaworlds@gmail.com]]></description>
-            <content:encoded><![CDATA[<p>My email address: <a href="mailto:nokaworlds@gmail.com" target="_blank" rel="noopener noreferrer"></a><a href="mailto:nokaworlds@gmail.com" target="_blank" rel="noopener noreferrer">nokaworlds@gmail.com</a></p><p>-----BEGIN PUBLIC KEY----- </p><blockquote><p>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCCGM1TLTws1rEuKAs+Bf5D8GET
-on4k2UCwYDimfiGeSlf4Zd0StokjjZeC+78DP2aIpjSxkIsIHLev62gX4kozLxC1
-j7GytRadVL5nUSrOZj6Y0H4cTO2RlSkksSDOv3L3ytc4L3G1tCv5eRHCcOLB1T3Y
-Vv14I6n84G/Tm+44PQIDAQAB</p></blockquote><p>-----END PUBLIC KEY-----</p>]]></content:encoded>
-            <category>crypto</category>
-            <category>encryption</category>
         </item>
         <item>
             <title><![CDATA[Overview]]></title>
@@ -28,7 +30,7 @@ Vv14I6n84G/Tm+44PQIDAQAB</p></blockquote><p>-----END PUBLIC KEY-----</p>]]></con
             <pubDate>Tue, 07 Jun 2022 10:27:39 GMT</pubDate>
             <description><![CDATA[Overview]]></description>
             <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a class="hash-link" href="#overview" title="Direct link to heading">​</a></h3><p>This blog will include some research on interesting coding topic or markdown my journey of learning competitive programming.</p>]]></content:encoded>
-            <category>Competitive programming</category>
+            <category>Overview</category>
         </item>
     </channel>
 </rss>

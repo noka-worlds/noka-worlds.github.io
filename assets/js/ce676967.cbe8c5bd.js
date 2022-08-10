@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[7268],{6805:function(e){e.exports=JSON.parse('{"label":"virtual internship","permalink":"/coding/tags/virtual-internship","allTagsPath":"/coding/tags","count":1}')}}]);

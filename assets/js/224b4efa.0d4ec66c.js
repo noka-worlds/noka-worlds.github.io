@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[5318],{6409:function(e){e.exports=JSON.parse('{"label":"Competitive programming","permalink":"/coding/tags/competitive-programming","allTagsPath":"/coding/tags","count":1}')}}]);
