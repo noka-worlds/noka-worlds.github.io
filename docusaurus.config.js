@@ -52,11 +52,6 @@ const config = {
             to: 'travel', 
             label: 'Travel', 
             position: 'left'
-          },
-          {
-            to: 'foodie', 
-            label: 'Foodie', 
-            position: 'left'
           },*/
           {
             to: 'learning', 
@@ -67,6 +62,11 @@ const config = {
           {
             to: 'coding', 
             label: 'Coding', 
+            position: 'left'
+          },
+          {
+            to: 'opensource', 
+            label: 'Open Source', 
             position: 'left'
           },
           {
@@ -111,11 +111,12 @@ const config = {
       },
     ],
     [
-      '@docusaurus/plugin-content-blog',
+      '@docusaurus/plugin-content-docs',
       {
-        id: 'foodie-blog',
-        routeBasePath: 'foodie',
-        path: './Blogs/foodie',
+        id: 'opensource-docs',
+        routeBasePath: 'opensource',
+        path: './Blogs/opensource',
+        sidebarPath: require.resolve('./sidebarOpensource.js'),
       },
     ],
     [
