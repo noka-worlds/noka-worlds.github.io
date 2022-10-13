@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[2556],{1795:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"index","permalink":"/foodie/index"}]}')}}]);
