@@ -2,6 +2,14 @@ module.exports = {
   mySidebar: [
     'index',
     'roadmap',
+    {
+      type: 'category',
+      label: 'STANFORD - CS144 Introduction to Computer Network',
+      items: [
+        'STANFORD-CS144/index',
+        'STANFORD-CS144/lab0',
+      ]
+    },
     /*
     {
       type: 'category',
