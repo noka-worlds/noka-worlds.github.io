@@ -4,79 +4,32 @@ module.exports = {
     'roadmap',
     {
       type: 'category',
-      label: 'STANFORD - CS144 Introduction to Computer Network',
+      label: 'CS144: Computer Network',
       items: [
         'STANFORD-CS144/index',
-        'STANFORD-CS144/lab0',
-      ]
-    },
-    /*
-    {
-      type: 'category',
-      label: 'MIT-6.087 C programming',
-      items: [
-        'MIT-6.087/index',
-        'MIT-6.087/PB1/index',
-        'MIT-6.087/PB2/index',
-        'MIT-6.087/PB3/index',
-        {
-          type: 'category',
-          label: 'Problem Set 4',
-          items: [
-            'MIT-6.087/PB4/index',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Problem Set 5',
-          items: [
-            'MIT-6.087/PB5/index',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Problem Set 6',
-          items: [
-            'MIT-6.087/PB6/index',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Problem Set 7',
-          items: [
-            'MIT-6.087/PB7/index',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Lab 1',
-          items: [
-            'MIT-6.087/LAB1/index',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Lab 2',
-          items: [
-            'MIT-6.087/LAB2/index',
-          ]
-        }
-      ],
-    },
-    {
-      type: 'category',
-      label: 'MIT-6.005 Software Construction',
-      items: [
-        'MIT-6.005/index',
+        // 'STANFORD-CS144/lab0',
+        // 'STANFORD-CS144/lab1',
+        // 'STANFORD-CS144/lab2',
+        // 'STANFORD-CS144/lab3',
+        // 'STANFORD-CS144/lab4',
+        // 'STANFORD-CS144/lab5',
+        // 'STANFORD-CS144/lab6',
+        // 'STANFORD-CS144/lab7', 
       ]
     },
     {
       type: 'category',
-      label: 'MIT-6.170 Software Studio',
+      label: 'CS110L: Safety in Systems Programming',
       items: [
-        'MIT-6.170/index',
+        'STANFORD-CS110L/index',
+        // 'STANFORD-CS110L/week1',
+        // 'STANFORD-CS110L/week2',
+        // 'STANFORD-CS110L/week3',
+        // 'STANFORD-CS110L/week5',
+        // 'STANFORD-CS110L/week7',
+        // 'STANFORD-CS110L/project1',
+        // 'STANFORD-CS110L/project2',
       ]
-    },
-    */
+    }, 
   ],
 };
