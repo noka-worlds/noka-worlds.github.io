@@ -6,5 +6,4 @@ hide_table_of_contents: false
 
 |                         Project name                          |         Project description         |   Details   | Difficulty |    Role     |
 | :-----------------------------------------------------------: | :---------------------------------: | :---------: | :--------: | :---------: |
-| [Sudoku-core](https://github.com/potatochick2020/Sudoku-core) |   A sudoku library writen in c++    |    :--:     |    :--:    |    Owner    | 
-|   [Procfetch](https://github.com/TanmayPatil105/procfetch)    | A linux utility to show system info |    :---:    |   :---:    | Contributor | 
+| [Sudoku-core](https://github.com/potatochick2020/Sudoku-core) |   A sudoku library writen in c++    |    :--:     |    :--:    |    Owner    |  
