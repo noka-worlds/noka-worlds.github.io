@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[2897],{2379:function(e){e.exports=JSON.parse('{"label":"Rust","permalink":"/learning/tags/rust","allTagsPath":"/learning/tags","count":1,"items":[{"id":"STANFORD-CS110L/index","title":"Overview","description":"Introduction","permalink":"/learning/STANFORD-CS110L/"}]}')}}]);
