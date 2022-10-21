@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[5611],{4165:function(s){s.exports=JSON.parse('{"label":"Rust","permalink":"/projects/tags/rust","allTagsPath":"/projects/tags","count":1,"items":[{"id":"rust-hangman","title":"Rust Hangman","description":"Details","permalink":"/projects/rust-hangman"}]}')}}]);
