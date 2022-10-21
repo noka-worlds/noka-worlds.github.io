@@ -22,7 +22,7 @@ module.exports = {
       label: 'CS110L: Safety in Systems Programming',
       items: [
         'STANFORD-CS110L/index',
-        // 'STANFORD-CS110L/week1',
+        'STANFORD-CS110L/week1',
         // 'STANFORD-CS110L/week2',
         // 'STANFORD-CS110L/week3',
         // 'STANFORD-CS110L/week5',

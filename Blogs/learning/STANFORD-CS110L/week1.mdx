@@ -1,61 +1,87 @@
 ---
-title: "Checkpoint 0: Networking Warmup"
-tags: [Stanford,CS144,C++,Computer Networking]
----
+title: "Week 1 Exercises: Hello world"
+tags: [Stanford,CS110L,Rust,System Programming]
+--- 
 
+### Part 1: Hello world
 
-### Webget:
+There are 3 command introduced in this section
 
-From [TCPsocket documentation](https://cs144.github.io/doc/lab0/class_t_c_p_socket.html), the example code looks like bellow, But please aware that there is not any **HTTP request** here, the address is a **local address**, and the example code consisted of both **server** and **client** .  
+ 1. `cargo build` to compile the code  
+ 2. `cargo run` to compile and run the code 
+ 3. `cargo test` to run the tests
 
-Example code from [TCPsocket documentation](https://cs144.github.io/doc/lab0/class_t_c_p_socket.html)
-```c++
-const uint16_t portnum = ((std::random_device()()) % 50000) + 1025;
- 
-// create a TCP socket, bind it to a local address, and listen
-TCPSocket sock1;
-sock1.bind(Address("127.0.0.1", portnum));
-sock1.listen(1);
- 
-// create another socket and connect to the first one
-TCPSocket sock2;
-sock2.connect(Address("127.0.0.1", portnum));
- 
-// accept the connection
-auto sock3 = sock1.accept();
-sock3.write("hi there");
- 
-auto recvd = sock2.read();
-sock2.write("hi yourself");
- 
-auto recvd2 = sock3.read();
- 
-sock1.close();              // don't need to accept any more connections
-sock2.close();              // you can call close(2) on a socket
-sock3.shutdown(SHUT_RDWR);  // you can also shutdown(2) a socket
-if (recvd != "hi there" || recvd2 != "hi yourself") {
-    throw std::runtime_error("wrong data received");
+### Part 2: warmup
+
+#### Variables
+Unlike most of the other languages, variable are default to be constant, which is not mutable, to declare a mutable variable,
+```rust 
+ let mut retv: Vec<i32> = Vec::new();
+ let mut elements = HashSet::new();
+ let mut n: i32 = 1; 
+```
+
+There is a pretty cute feature in rust, which is called "type interface", which the compiler could figure out the type that the data should be.
+
+```rust 
+ let mut n = 1; 
+```
+
+We need to implement 3 function in this section, 
+ - Implement `add_n`, which takes a vector of numbers and some number n. The function should return a new vector whose elements are the numbers in the original vector v with n added to each number.
+ - Implement `add_n_inplace`, which does the same thing as add_n, but modifies v directly (in place) and does not return anything.
+ - Implement `dedup` that removes duplicate elements from a vector in-place (i.e. modifies v directly). If an element is repeated anywhere in the vector, you should keep the element that appears first. You may want to use a HashSet for this.
+
+#### add_n
+The parameter `v: Vec<i32>` is a constant, so there is not any way to implement this function in place, but require declaring a new vector.
+
+```rust
+fn add_n(v: Vec<i32>, n: i32) -> Vec<i32> {
+    let mut retv: Vec<i32> = Vec::new();
+    for i in v.iter()  { 
+        retv.push(i + n);
+    }
+    return retv;
+}
+```
+#### add_n_inplace
+The parameter `v: &mut Vec<i32>` is a mutable vector, so we could make changes to vector directly.
+
+```rust
+fn add_n_inplace(v: &mut Vec<i32>, n: i32) {
+    for i in 0..v.len() {
+        v[i] = v[i] + n;
+    }
 }
 ```
 
-**C/C++ socket**
+#### dedup
 
-![](../STANFORD-CS144/C-socket.png)
+Declare a hashset `elements` to keep track every unique element in the `v: &mut Vec<i32>`
 
-From the image above, we can understand we just need 1 socket to  
-1. connect to the server
-2. send a request
-3. read the response.
+```rust
+fn dedup(v: &mut Vec<i32>) {
+    let mut elements = HashSet::new();
+    let mut newv : Vec<i32> = Vec::new();
+    for i in 0..v.len() {
+        if elements.contains(&v[i]){
+            continue;
+        } else {
+            newv.push(v[i]);
+            elements.insert(v[i]);
+        } 
+    }
+    v.clear();
+    for i in 0..newv.len() { 
+        v.push(newv[i]);
+    }
+}
+```
 
+### Part 3: Hangman 
+I write a separate [blog](../../projects/rust-hangman.mdx) for this mini-project.
 
+### Course Material:
+[Course Website](https://reberhardt.com/cs110l/spring-2020/)  
+[Hangout](https://reberhardt.com/cs110l/spring-2020/assignments/week-1-exercises/)
 
-#### Notes:
-
-- Following section 2.1 should give you enough information to what you need to do actually
-- Figure out how a HTTP request is form might be useful
-
-
-
-### Byte Stream:
-
-The tricky part (if have) is choosing the correct data structure for the storage of Byte Stream, We could know the datastructure should support `push_back()` and `pop_front()` for `write()` and `read()` functions. Therefore I choose to use `deque<char>` for storage, `vector<char>` will work too but definitely not as efficient as deque does as pop_front() in vector require O(N) time complexity while pop_front() in deque require O(1) time complexity
