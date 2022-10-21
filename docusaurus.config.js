@@ -65,8 +65,8 @@ const config = {
             position: 'left'
           },
           {
-            to: 'opensource', 
-            label: 'Open Source', 
+            to: 'projects', 
+            label: 'Projects', 
             position: 'left'
           },
           {
@@ -113,10 +113,10 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'opensource-docs',
-        routeBasePath: 'opensource',
-        path: './Blogs/opensource',
-        sidebarPath: require.resolve('./sidebarOpensource.js'),
+        id: 'projects-docs',
+        routeBasePath: 'projects',
+        path: './Blogs/projects',
+        sidebarPath: require.resolve('./sidebarProjects.js'),
       },
     ],
     [

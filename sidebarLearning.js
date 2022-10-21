@@ -7,7 +7,7 @@ module.exports = {
       label: 'CS144: Computer Network',
       items: [
         'STANFORD-CS144/index',
-        // 'STANFORD-CS144/lab0',
+        'STANFORD-CS144/lab0',
         // 'STANFORD-CS144/lab1',
         // 'STANFORD-CS144/lab2',
         // 'STANFORD-CS144/lab3',
