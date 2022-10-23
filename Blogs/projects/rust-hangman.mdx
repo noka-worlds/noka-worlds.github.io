@@ -3,4 +3,237 @@ title: 'Rust Hangman'
 hide_table_of_contents: false
 tags: [Stanford,CS110L,Rust,System Programming]
 ---
- 
+## Details
+
+A simple mini project to get myself familiar with rust syntax, more details will be mentioned bellow.
+
+## Learning outcome 
+
+### Variable with Underscore(_) Prefix
+
+This warning message will appear when there are unused variable and suggested to use `_i` instead of `i` , which refer to variable to ignore warning.
+```
+help: if the variable is meant to be unused, consider prefixing with an underscore: `_i`
+```
+
+#### Common Use-cases
+when we want a for loop in a range, which the loop counter does not need to be used as a variable like being index of a vector, it is better to use _i to ignore warning message.
+```rust
+for _i in 0..10 {
+    println!();
+}
+```
+### Borrowing and Ownership
+
+This is something similar to pointer in C/C++ but with memory-safety features which compiler wont let the program being compile if we don't follow the rust's ownership rules
+```rust   
+hs : &HashSet<char>
+v : &Vec<char> 
+```
+## Example 
+
+### Successful guess
+```
+Welcome to CS110L Hangman!
+The word so far is -------
+You have guessed the following letters:
+You have 5 guesses left
+Please guess a letter: r
+
+The word so far is ------r
+You have guessed the following letters: r
+You have 5 guesses left
+Please guess a letter: s
+
+The word so far is ---s--r
+You have guessed the following letters: rs
+You have 5 guesses left
+Please guess a letter: t
+
+The word so far is ---st-r
+You have guessed the following letters: rst
+You have 5 guesses left
+Please guess a letter: l
+
+The word so far is l--st-r
+You have guessed the following letters: rstl
+You have 5 guesses left
+Please guess a letter: a
+Sorry, that letter is not in the word
+
+The word so far is l--st-r
+You have guessed the following letters: rstla
+You have 4 guesses left
+Please guess a letter: b
+
+The word so far is l-bst-r
+You have guessed the following letters: rstlab
+You have 4 guesses left
+Please guess a letter: c
+Sorry, that letter is not in the word
+
+The word so far is l-bst-r
+You have guessed the following letters: rstlabc
+You have 3 guesses left
+Please guess a letter: o
+
+The word so far is lobst-r
+You have guessed the following letters: rstlabco
+You have 3 guesses left
+Please guess a letter: e
+
+Congratulations you guessed the secret word: lobster!
+```
+
+### Failed guess
+```
+Welcome to CS110L Hangman!
+The word so far is --------
+You have guessed the following letters:
+You have 5 guesses left
+Please guess a letter: a
+
+The word so far is --a-----
+You have guessed the following letters: a
+You have 5 guesses left
+Please guess a letter: b
+Sorry, that letter is not in the word
+
+The word so far is --a-----
+You have guessed the following letters: ab
+You have 4 guesses left
+Please guess a letter: c
+
+The word so far is c-a-----
+You have guessed the following letters: abc
+You have 4 guesses left
+Please guess a letter: d
+Sorry, that letter is not in the word
+
+The word so far is c-a-----
+You have guessed the following letters: abcd
+You have 3 guesses left
+Please guess a letter: e
+Sorry, that letter is not in the word
+
+The word so far is c-a-----
+You have guessed the following letters: abcde
+You have 2 guesses left
+Please guess a letter: f
+
+The word so far is c-a-f---
+You have guessed the following letters: abcdef
+You have 2 guesses left
+Please guess a letter: g
+Sorry, that letter is not in the word
+
+The word so far is c-a-f---
+You have guessed the following letters: abcdefg
+You have 1 guesses left
+Please guess a letter: h
+
+The word so far is c-a-f--h
+You have guessed the following letters: abcdefgh
+You have 1 guesses left
+Please guess a letter: i
+
+The word so far is c-a-fi-h
+You have guessed the following letters: abcdefghi
+You have 1 guesses left
+Please guess a letter: j
+Sorry, that letter is not in the word
+
+Sorry, you ran out of guesses!
+```
+
+## Code
+
+```rust 
+extern crate rand;
+use rand::Rng;
+use std::fs;
+use std::io;
+use std::io::Write;
+use std::collections::HashSet;
+
+const NUM_INCORRECT_GUESSES: u32 = 5;
+const WORDS_PATH: &str = "words.txt";
+
+fn pick_a_random_word() -> String {
+    let file_string = fs::read_to_string(WORDS_PATH).expect("Unable to read file.");
+    let words: Vec<&str> = file_string.split('\n').collect();
+    String::from(words[rand::thread_rng().gen_range(0, words.len())].trim())
+}
+
+fn print_guesses_result(v : &Vec<char> ) {
+    print!("The word so far is ");
+    for i in v{
+        print!("{}",i);
+    }
+    println!();
+}
+
+fn print_guesses_following_letters(hs : &HashSet<char> ) {
+    print!("You have guessed the following letters: ");
+    for i in hs{
+        print!("{}",i);
+    }
+    println!();
+}
+
+fn main() {
+    let secret_word = pick_a_random_word(); 
+    let secret_word_chars: Vec<char> = secret_word.chars().collect(); 
+
+    // My code here! :) 
+    let mut curr_wrong_guesses = 0; 
+    let mut guesses_result_chars = Vec::new();
+    let mut guesses_unique_chars = HashSet::new();
+    for _i in 0..secret_word_chars.len() {
+        guesses_result_chars.push('-');
+    }
+    println!("Welcome to CS110L Hangman!");
+    loop {
+        print_guesses_result(&guesses_result_chars); 
+        print_guesses_following_letters(&guesses_unique_chars); 
+        println!("You have {} guesses left",NUM_INCORRECT_GUESSES - curr_wrong_guesses);
+        if NUM_INCORRECT_GUESSES - curr_wrong_guesses == 0 {
+            println!();
+            println!("Sorry, you ran out of guesses!"); 
+            break;
+        }
+        if guesses_result_chars == secret_word_chars{            
+            println!();
+            println!("Congratulations you guessed the secret word: {}!",secret_word); 
+            break;
+        }
+        print!("Please guess a letter: ");
+        io::stdout()
+            .flush()
+            .expect("Error flushing stdout.");
+        let mut user_input = String::new();
+        io::stdin()
+            .read_line(&mut user_input)
+            .expect("Error flushing stdout.");
+        println!(); 
+        let guesses_char: Vec<char> = user_input.chars().collect();
+        if guesses_unique_chars.contains(&guesses_char[0]){
+            println!("This letter have been inputted already");
+            println!();
+        } else {
+            if secret_word_chars.contains(&guesses_char[0]){
+                for i in 0..secret_word_chars.len(){
+                    if secret_word_chars[i] == guesses_char[0]{
+                        guesses_result_chars[i]=guesses_char[0];
+                    }
+                }
+            } else {
+                curr_wrong_guesses = curr_wrong_guesses + 1;
+                println!("Sorry, that letter is not in the word")
+            } 
+            guesses_unique_chars.insert(guesses_char[0]);
+        } 
+    } 
+}
+
+```

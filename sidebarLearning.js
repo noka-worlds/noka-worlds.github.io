@@ -23,7 +23,7 @@ module.exports = {
       items: [
         'STANFORD-CS110L/index',
         'STANFORD-CS110L/week1',
-        // 'STANFORD-CS110L/week2',
+        'STANFORD-CS110L/week2',
         // 'STANFORD-CS110L/week3',
         // 'STANFORD-CS110L/week5',
         // 'STANFORD-CS110L/week7',
