@@ -6,5 +6,5 @@ hide_table_of_contents: false
 
 |                         Project name                          |         Project description         |   Programming language   | Difficulty |    Role     | Coursework ? | 
 | :-----------------------------------------------------------: | :---------------------------------: | :---------: | :--------: | :---------: |:---------: |
-| [Sudoku-core(Github)](https://github.com/potatochick2020/Sudoku-core) |   A sudoku library writen in c++    | C++     |    🌟🌟🌟 |    Owner    |  :x: |
-| [Rust Hangman](rust-hangman)  |   A sudoku library writen in c++    | Rust    |    🌟  |    Owner    |   :white_check_mark:|
+| Sudoku-core[Github](https://github.com/potatochick2020/Sudoku-core)[Write-Up](./sudoku-core.mdx) |   A sudoku library writen in c++    | C++     |    🌟🌟🌟 |    Owner    |  :x: |
+| [Rust Hangman](./rust-hangman)  |   A simple handman game in rust    | Rust    |    🌟  |    Owner    |   :white_check_mark: cs144|
