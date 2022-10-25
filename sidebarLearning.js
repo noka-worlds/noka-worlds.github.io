@@ -30,6 +30,20 @@ module.exports = {
         // 'STANFORD-CS110L/project1',
         // 'STANFORD-CS110L/project2',
       ]
-    }, 
+    },
+    {
+      type: 'category',
+      label: 'CS106L: Standard C++ Programming',
+      items: [
+        'STANFORD-CS106L/index', 
+        'STANFORD-CS106L/notes', 
+        'STANFORD-CS106L/assignment1', 
+        'STANFORD-CS106L/assignment2', 
+        'STANFORD-CS106L/assignment3', 
+        // 'STANFORD-CS144/lab5',
+        // 'STANFORD-CS144/lab6',
+        // 'STANFORD-CS144/lab7', 
+      ]
+    },
   ],
 };
