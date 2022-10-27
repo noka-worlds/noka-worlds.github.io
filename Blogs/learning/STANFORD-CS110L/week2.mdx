@@ -104,8 +104,9 @@ fn read_file_lines(filename: &String) -> Result<Vec<String>, io::Error> {
 
 #### Milestone 2: Implementing the Grid interface
 
-Unlike C++ there is no such thing as nullptr which can point to non-valid location, 'Option<T>' need to be use when we want a `null`.
+Unlike C++ there is no such thing as nullptr which can point to non-valid location, `Option<T>` need to be use when we want a `null`.
 This is also an example of how to use `Err()` and `Ok()` for `Result<T, E>`
+
 ```rust
 pub fn get(&self, row: usize, col: usize) -> Option<usize> {
     if row >= self.num_rows || col >= self.num_cols {
